@@ -18,6 +18,8 @@ class Atom(object):
         return self._OTHER
 
     def __str__(self)->str:
-        aux = str(self._ID) + str(self._OTHER)
+        aux = str(self._ID)
+        if self.OTHERType().AllAttr() != {}
+            aux += str(self._OTHER)
         return aux
         
