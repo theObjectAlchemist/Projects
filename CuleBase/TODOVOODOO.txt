@@ -3,4 +3,3 @@
 -create an atom info generator (creates an instance of atom and allows user to input data)
 	Selective reading (read first 2 or 3 lines for select data ('exists' searching)
 
--lamo
