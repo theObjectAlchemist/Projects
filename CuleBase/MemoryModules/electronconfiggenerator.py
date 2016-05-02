@@ -1,5 +1,5 @@
 def Erray(num:int)->list:
-    pi = 5 #'keeping track'
+    pi = 1 #'keeping track'
     si = 1 #which orbital
     ti = 1 #which quantum number
     counter = 1 #which iteration
