@@ -10,7 +10,16 @@ class ElectronConfig(object):
         self._tag = tag
 
 
-    def GenerateConfiguration(self):
+
+    def _create_config_str_(self, orbital_list:list, el_count_list:list)->:
+        aux = ''
+        for i in range (0, len(orbitals_list)):
+            aux += orbitals_list[i]+str(el_count_list[i])
+            if i != len(orbitals_list)-1:
+            aux += ','
+        return aux
+
+    def GenerateConfiguration(self, raw = False)->strs:
         orbitals = []
         el_count = []
 
@@ -24,6 +33,7 @@ class ElectronConfig(object):
             this_orbital = str(ti)+str(ORBITALS[si-1])
 
             if this_orbital not in orbitals:
+                #insert code on condensing conig
                 orbitals.append(this_orbital)
                 el_count.append(0)
 
@@ -54,10 +64,8 @@ class ElectronConfig(object):
                     pi += 1
                     ti = pi
 
-        ECONFIG = ''
-        for i in range (0, len(orbitals)):
-                ECONFIG += orbitals[i]+str(el_count[i])
-                if i != len(orbitals)-1:
-                    ECONFIG += ','
+        ECONFIG = self._create_config_str_(orbitals, el_count)
+
+        #if raw == False: ECONFIG = self._condense_config_str(ECONFIG)   
 
         return ECONFIG
