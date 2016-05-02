@@ -27,3 +27,5 @@ class AtomWriter(object):
             auxFile.close()
         except (IOError):
             raise CannotFindAtomFile()
+
+testFile = None
