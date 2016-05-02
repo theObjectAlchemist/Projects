@@ -19,7 +19,7 @@ class Atom(object):
 
     def __str__(self)->str:
         aux = str(self._ID)
-        if self.OTHERType().AllAttr() != {}
+        if not self.OTHERType().IsEmpty():
             aux += str(self._OTHER)
         return aux
         

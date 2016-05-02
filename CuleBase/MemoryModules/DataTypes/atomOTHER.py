@@ -28,6 +28,12 @@ class AtomOTHER(object):
         """returns a dictionary type of all attributes"""
         return self._attr
 
+    def IsEmpty(self)->bool:
+        """returns a bool indicating if there are any attributes"""
+        if self._attr == {}:
+            return True
+        return False
+
     def __str__(self):
         aux = 'GENERAL\n'
         for i in self._attr:
