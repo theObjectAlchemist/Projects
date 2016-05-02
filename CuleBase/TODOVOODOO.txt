@@ -1,0 +1,1 @@
+integrate electron condensing the electron config
