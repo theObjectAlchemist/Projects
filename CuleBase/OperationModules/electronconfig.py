@@ -66,6 +66,16 @@ class ElectronConfig(object):
 
         ECONFIG = self._create_config_str_(orbitals, el_count)
 
-        #if raw == False: ECONFIG = self._condense_config_str(ECONFIG)   
+        #if raw == False: ECONFIG = self._condense_config_str(ECONFIG)
+        if raw == True:
+            return ECONFIG
+        else:
+            return
 
-        return ECONFIG
+
+
+    def Condense(self,ECONFIG:str) -> str:
+
+        
+
+        return None
