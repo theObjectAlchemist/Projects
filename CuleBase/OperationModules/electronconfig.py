@@ -70,7 +70,7 @@ class ElectronConfig(object):
         if raw == True:
             return ECONFIG
         else:
-            return
+            return Condense(ECONFIG)
 
 
 
