@@ -1,0 +1,5 @@
+IDENTITY
+Name:Fluorine
+Abbreviation:F
+Atomic Number:9
+Atomic Mass:18.998

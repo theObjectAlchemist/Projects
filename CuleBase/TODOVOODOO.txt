@@ -1,5 +1,14 @@
 -integrate electron condensing the electron config
+
+-error check and edit the shit out of everything thus far
+
 -read atom data from text file (same format as outputted format)
--create an atom info generator (creates an instance of atom and allows user to input data)
-	Selective reading (read first 2 or 3 lines for select data ('exists' searching)
+	-Selective reading (read first 2 or 3 lines for select data ('exists' searching)
+
+
+
+GOALS FOR NEXT BIWEEKLY:
+ERROR CHECK THE SHIT OUT OF ALL FILES (UNITTEST)
+MAKE BUG FREE AND START MAKING OPERATIONS ON FILES MORE EASIER ON CONSOLE (clean and detailed)
+
 

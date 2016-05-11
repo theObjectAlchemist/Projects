@@ -14,8 +14,21 @@ class AtomID(object):
         except (KeyError):
             return None #may need modification in future
 
+
+    def Set(self, attr:str, val:object)->None:
+        try:
+            aux = self._attr[attr]
+            self._attr[attr] = val
+        except:
+            return None
+
+    def GetAll(self)->list:
+        return [self._attr['Name'], self._attr['Abbreviation'],
+                self._attr['Atomic Number'], self._attr['Atomic Mass']]
+
     def __str__(self):
         aux = 'IDENTITY\nName:{}\nAbbreviation:{}\nAtomic Number:{}\nAtomic Mass:{}\n'.format(
-            self._attr['Name'], self._attr['Abbreviation'], self._attr['Atomic Number'], self._attr['Atomic Mass'])
+            self._attr['Name'], self._attr['Abbreviation'],
+            self._attr['Atomic Number'], self._attr['Atomic Mass'])
         return aux
     

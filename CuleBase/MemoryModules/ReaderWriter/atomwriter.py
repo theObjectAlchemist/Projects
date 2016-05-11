@@ -10,14 +10,16 @@ class CannotFindAtomFile(Exception):
 
 class AtomWriter(object):
 
-    def WriteAtomToFile(self, elem: Atom)->None:
+    def WriteAtomToFile(self, elem: Atom, path = '')->None:
         try:
-            testFile = open(elem.IDType().Get('Name')+'.txt', 'r')
+            testFile = open(path+elem.IDType().Get('Name')+'.txt', 'r')
             testFile.close()
+            testFile = None
         except (IOError):
-            auxFile = open(elem.IDType().Get('Name')+'.txt', 'w')
+            auxFile = open(path+elem.IDType().Get('Name')+'.txt', 'w')
             auxFile.write(str(elem))
             auxFile.close()
+            auxFile = None
 
 
     def ReadAtomFromFile(self, elem: str)->Atom:
