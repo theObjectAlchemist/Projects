@@ -11,7 +11,7 @@ class ElectronConfig(object):
 
 
 
-    def _create_config_str_(self, orbital_list:list, el_count_list:list)->:
+    def _create_config_str_(self, orbital_list:list, el_count_list:list):
         aux = ''
         for i in range (0, len(orbitals_list)):
             aux += orbitals_list[i]+str(el_count_list[i])
