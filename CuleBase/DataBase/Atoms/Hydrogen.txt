@@ -1,0 +1,5 @@
+IDENTITY
+Name:Hydrogen
+Abbreviation:H
+Atomic Number:1
+Atomic Mass:1.01

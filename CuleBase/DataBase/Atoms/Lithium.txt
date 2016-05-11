@@ -1,0 +1,5 @@
+IDENTITY
+Name:Lithium
+Abbreviation:Li
+Atomic Number:3
+Atomic Mass:6.941
