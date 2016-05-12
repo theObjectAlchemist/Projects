@@ -1,0 +1,5 @@
+IDENTITY
+Name:Nitrogen
+Abbreviation:N
+Atomic Number:7
+Atomic Mass:14.007
